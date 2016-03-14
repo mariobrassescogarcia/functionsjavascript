@@ -61,17 +61,25 @@ console.log( dniLetter( 92234488 ) === 'A'); */
 // Open the console and reload the index page to see the result of the code.
 // Write a function that takes an array of words and returns the length of the longest one.
 
-/*
 
-function findLongestWord( array_words ){
 
+function findLongestWord( array_words ) {
+
+	var array_with_length = [];
+    var max_length
+
+    for ( i = 0 ; i < array_words.length ; i++ ){
+        array_with_length.push(array_words[i].length);
+    }
+    max_length = Math.max(...array_with_length);
+    return max_length;
 }
 
 console.log( findLongestWord( ["Richie", "Joanie", "Greg", "Marcia", "Bobby"] ) ===6 );
 console.log( findLongestWord( ["Blanka", "Zangief", "Chun Li", "Guile"] ) === 7 );
 console.log( findLongestWord( ["Red", "Blue", "Green"] ) === 5 );
 
-*/
+
 
 //EXERCISE 4
 //
