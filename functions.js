@@ -21,7 +21,8 @@ function dniLetter( dni ) {
     var lockup = 'TRWAGMYFPDXBNJZSQVHLCKE';
     var index = dni % 23;
     var array = lockup.split("");
-        if ( (dni.length === 8) && ( dni.split.some(isNaN) === false ) ) {
+
+        if ( (dni.toString().length === 8) && ( isNaN(dni) === false ) ) {
             var result = array[index];  
         }
         else {
