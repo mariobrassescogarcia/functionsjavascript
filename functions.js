@@ -15,21 +15,27 @@
 // If your code works, the last three equalities will be "true"
 
 
-/*
+
 
 function dniLetter( dni ) {
-
-	var lockup = 'TRWAGMYFPDXBNJZSQVHLCKE';
-	var result = '';
-
-		return result;
+    var lockup = 'TRWAGMYFPDXBNJZSQVHLCKE';
+    var index = dni % 23;
+    var array = lockup.split("");
+        if ( (dni.length === 8) && ( dni.split.some(isNaN) === false ) ) {
+            var result = array[index];  
+        }
+        else {
+            var result = "Invalid parameter"
+            
+        }
+        return result
 }
 
 console.log( dniLetter( 12345678 ) === 'Z');
 console.log( dniLetter( 34667892 ) === 'S');
 console.log( dniLetter( 92234488 ) === 'A');
 
-*/
+
 
 
 //EXERCISE 2
@@ -39,12 +45,12 @@ console.log( dniLetter( 92234488 ) === 'A');
 // Improve the exercise above to be able to perform this new functionality
 // Of course it has to keep working as usual with right inputs.
 
-/*
+
 
 console.log( dniLetter( -1 ) === 'Invalid parameter');
 console.log( dniLetter( "A1234567" ) === 'Invalid parameter');
 
-*/
+
 
 
 //EXERCISE 3
