@@ -17,7 +17,7 @@
 
 
 
-function dniLetter( dni ) {
+/* function dniLetter( dni ) {
     var lockup = 'TRWAGMYFPDXBNJZSQVHLCKE';
     var index = dni % 23;
     var array = lockup.split("");
@@ -34,7 +34,7 @@ function dniLetter( dni ) {
 
 console.log( dniLetter( 12345678 ) === 'Z');
 console.log( dniLetter( 34667892 ) === 'S');
-console.log( dniLetter( 92234488 ) === 'A');
+console.log( dniLetter( 92234488 ) === 'A'); */
 
 
 
@@ -48,8 +48,8 @@ console.log( dniLetter( 92234488 ) === 'A');
 
 
 
-console.log( dniLetter( -1 ) === 'Invalid parameter');
-console.log( dniLetter( "A1234567" ) === 'Invalid parameter');
+/* console.log( dniLetter( -1 ) === 'Invalid parameter');
+   console.log( dniLetter( "A1234567" ) === 'Invalid parameter'); */
 
 
 
