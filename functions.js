@@ -89,20 +89,33 @@ console.log( findLongestWord( ["Red", "Blue", "Green"] ) === 5 );
 // You have to complete the calculateAverage function (it is a few lines below), and it has
 // to return the average of every number in a array instead of the "Not implemented yet" message.
 
-/*
+
 
 var array_lengths = [];
 array_lengths.push( findLongestWord( ["Richie", "Joanie", "Greg", "Marcia", "Bobby"]) );
 array_lengths.push( findLongestWord( ["Blanka", "Zangief", "Chun Li", "Guile"] ) );
 array_lengths.push( findLongestWord( ["Red", "Blue", "Green"] ) );
+
+
+
 //<place to add more lines>, read next commented text and you will understand
 
 console.log( "These are the longest lengths of each group: " + array_lengths );
 console.log( calculateAverage( array_lengths ) === 6 && "The average of longest lengths is: " + calculateAverage( array_lengths ))
 
-function calculateAverage( array )
-{
-	return( "Not implemented yet" )
+function calculateAverage(array)
+{	
+	var sum_lengths = 0
+	var lengths_count;
+	var average_length;
+
+	for ( i = 0 ; i < array.length ; i++ ){
+    	sum_lengths += array[i]
+    	}
+    	lengths_count = array.length
+    	average_length = sum_lengths / lengths_count
+
+	return average_length
 }
 
 // Now add more lengths to the array_lengths. You have to do it where <place to add more lines> is written. 
@@ -110,7 +123,7 @@ function calculateAverage( array )
 // Don't foget to add words to the array. The longer the better!
 // Now reload the page and see how changed the average.
 
-*/
+
 
 
 //EXERCISE 5
